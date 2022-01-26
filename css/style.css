@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    padding: 45px 0;
+    padding: 25px;
 }
 
 p, li {
@@ -57,15 +57,22 @@ header .navbar {
 .container-fluid {
     padding: 0;
   }
-  
-  #mainslider .carousel-inner, #mainslider .carousel-item {
-    height: 90vh;
+ 
+
+  .carousel-inner > .carousel-item > img {
+    width: 640 px;
+    height: 840px; 
   }
   
-  #mainslider .carousel-caption {
-    top: 50%;
+  /* #mainslider .carousel-inner, .carousel-item {
+    height: 50rem;
   }
+
+  #mainslider */
   
+  .carousel-caption {
+    bottom:  10%;
+  } 
   #mainslider .carousel-caption h2 {
     font-size: 50px;
     margin-bottom: 10px;
@@ -76,7 +83,7 @@ header .navbar {
     font-weight: 50px;
     margin-bottom: 40px;
     color: #FFF;
-  }
+  } 
   
   .main-btn {
     background-color: #ca2fbb;
@@ -112,8 +119,8 @@ header .navbar {
 
   .main-title {
     color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
+    margin: 0 0 50px 0;
+    font-size: 50pt;
     text-align: center;
   }
 
@@ -129,14 +136,15 @@ header .navbar {
   .about-title {
 
     font-size: 17px;
-    color: #444;
+    color: rgb(255, 255, 255);
     text-transform: uppercase; /* LETRA MAIÚSCULA*/
     font-weight: bold; /* NEGRITO */
   }
-#about-list {
-  list-style: none;
-  padding: 0;
-}
+
+  #about-list {
+    list-style: none;
+    padding: 0;
+  }
   
   #about-list li {
     line-height: 30px;
@@ -149,3 +157,81 @@ header .navbar {
     padding-right: 0.5rem;
   }
  
+
+  .service-box {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .service-box i .service-box h4 {
+    transition: .5s;
+  }
+
+  .service-box i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+
+  .service-box:hover > i, .service-box:hover > h4 {
+    color: #018d8f;
+  }
+
+    /* CARD DESTAQUE */
+
+  .card {
+    border-width: 0.01rem;
+    border-color: #050505;
+    box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.205);
+    border-radius: 1.5rem;
+  }
+.card img{
+  border-radius: 1.5rem 1.5rem 0 0 ;
+}
+
+/* Newsletter */
+
+#news-area {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#news-area p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#email-input {
+border-radius: 0;
+border-bottom-left-radius: 3rem;
+border-top-left-radius: 3rem;
+border: 1px solid #018d8f;
+display: inline; 
+box-sizing: border-box;
+width: 30rem;
+height: 3rem;
+
+padding-left: 1rem;
+
+}
+
+#news-btn {
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border: 1px solid #018d8f;
+  background-color: #018d8f;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  width: 10rem;
+  height: 3rem;
+  padding: 0 1rem  ;
+  margin-left: -1rem;
+  /*position: absolute;*/
+  transition: .5s;
+}
+
+#news-btn:hover{
+  background-color: #FFF;
+  color: #018d8f;
+
+}
